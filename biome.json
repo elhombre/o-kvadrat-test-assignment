@@ -1,0 +1,88 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.3/schema.json",
+  "css": {
+    "formatter": {
+      "enabled": true
+    },
+    "parser": {
+      "cssModules": true
+    }
+  },
+  "files": {
+    "ignore": ["**/package.json", ".*/**", "**/generated/**/*"],
+    "ignoreUnknown": false
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space"
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "asNeeded",
+      "indentStyle": "space",
+      "indentWidth": 2,
+      "lineWidth": 120,
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double",
+      "semicolons": "asNeeded"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
+    }
+  },
+  "linter": {
+    "rules": {
+      "complexity": {
+        "useLiteralKeys": {
+          "fix": "none",
+          "level": "off"
+        }
+      },
+      "correctness": {
+        "noUndeclaredVariables": "warn",
+        "noUnusedImports": {
+          "fix": "safe",
+          "level": "warn"
+        },
+        "noUnusedVariables": {
+          "fix": "none",
+          "level": "error"
+        }
+      },
+      "style": {
+        "noVar": {
+          "fix": "unsafe",
+          "level": "error"
+        },
+        "useConst": {
+          "fix": "safe",
+          "level": "warn"
+        },
+        "useEnumInitializers": {
+          "fix": "unsafe",
+          "level": "off"
+        },
+        "useImportType": {
+          "fix": "safe",
+          "level": "info"
+        },
+        "useSelfClosingElements": {
+          "fix": "safe",
+          "level": "warn"
+        },
+        "useTemplate": {
+          "fix": "safe",
+          "level": "warn"
+        }
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": false,
+    "useIgnoreFile": false
+  }
+}

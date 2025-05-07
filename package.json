@@ -1,0 +1,21 @@
+{
+	"dependencies": {
+		"commander": "^13.1.0",
+		"ioredis": "^5.6.1"
+	},
+	"description": "Collect unique random numbers via Redis streams",
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"@types/node": "^22.15.14",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.8.3"
+	},
+	"main": "dist/index.js",
+	"name": "redis-number-collector",
+	"packageManager": "yarn@4.9.1",
+	"scripts": {
+		"build": "tsc",
+		"start": "ts-node src/index.ts"
+	},
+	"version": "1.0.0"
+}

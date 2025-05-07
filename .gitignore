@@ -1,0 +1,5 @@
+.*
+*.code-workspace
+*.lock
+output.json
+!.gitignore
